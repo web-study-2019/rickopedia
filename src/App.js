@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import List from "./components/List";
+import { CircularProgress } from "@material-ui/core";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+      list: [],
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      fetch("https://rickandmortyapi.com/api/character")
+        .then((response) => response.json())
+        .then((json) => {
+          this.setState({
+            loading: false,
+            list: json.results,
+          });
+        });
+    }, 1000);
+  }
+
+  getLoader() {
+    return <CircularProgress />;
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.loading ? (
+          this.getLoader()
+        ) : (
+          <List items={this.state.list} />
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
