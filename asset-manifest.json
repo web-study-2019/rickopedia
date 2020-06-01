@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rickopedia/static/css/main.2a7de157.chunk.css",
+    "main.js": "/rickopedia/static/js/main.e7cd8907.chunk.js",
+    "main.js.map": "/rickopedia/static/js/main.e7cd8907.chunk.js.map",
+    "runtime-main.js": "/rickopedia/static/js/runtime-main.afba7049.js",
+    "runtime-main.js.map": "/rickopedia/static/js/runtime-main.afba7049.js.map",
+    "static/js/2.ebde0d2b.chunk.js": "/rickopedia/static/js/2.ebde0d2b.chunk.js",
+    "static/js/2.ebde0d2b.chunk.js.map": "/rickopedia/static/js/2.ebde0d2b.chunk.js.map",
+    "index.html": "/rickopedia/index.html",
+    "precache-manifest.edcec8792cfadffe66154ef1c2132ce0.js": "/rickopedia/precache-manifest.edcec8792cfadffe66154ef1c2132ce0.js",
+    "service-worker.js": "/rickopedia/service-worker.js",
+    "static/css/main.2a7de157.chunk.css.map": "/rickopedia/static/css/main.2a7de157.chunk.css.map",
+    "static/js/2.ebde0d2b.chunk.js.LICENSE.txt": "/rickopedia/static/js/2.ebde0d2b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.afba7049.js",
+    "static/js/2.ebde0d2b.chunk.js",
+    "static/css/main.2a7de157.chunk.css",
+    "static/js/main.e7cd8907.chunk.js"
+  ]
+}
